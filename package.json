@@ -5,11 +5,14 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "npx nodemon --ignore database.json --exec node --experimental-json-modules src/index.js"
+    "dev": "npx nodemon --ignore database.json --exec node --experimental-json-modules --experimental-top-level-await src/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": "14.20"
+  },
   "dependencies": {
     "chalk": "^4.1.2",
     "chalk-table": "^1.0.2",
